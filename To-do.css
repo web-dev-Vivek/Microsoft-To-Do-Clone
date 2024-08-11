@@ -1,0 +1,91 @@
+		:root {
+			--nav-color: #2564cf;
+			--text-color1: black;
+			--text-color2: white;
+			--shadow: grey;
+			--text-color3: blue;
+			--button-normal: #cccccc;
+			--button-bright: #2564cf;
+			--button-text-color: white;
+		}
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
+		nav {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 12vw;
+			background-color: var(--nav-color);
+		}
+		nav p {
+			font-size: 20px;
+			margin: 16px;
+			color: var(--text-color2);
+		}
+		.menu {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			gap: 14%;
+			font-size: 18px;
+		}
+		@media (max-width: 900px) {
+			/* Add responsive styles here */
+		}
+		#hoverText, #hoverText1, #hoverTextNotice, #hoverTextProfile {
+			display: none;
+			position: absolute;
+			top: 18px;
+			background: white;
+			color: black;
+			border-radius: 3px;
+			font-size: 16px;
+			justify-content: center;
+			align-items: center;
+			width: 70px;
+			height: 24px;
+			box-shadow: 0px 2px 5px var(--shadow);
+		}
+		#hoverText1 {
+			right: 226px;
+		}
+		#hoverTextNotice {
+			right: 190px;
+		}
+		#hoverTextProfile {
+			right: 145px;
+		}
+		.search {
+			position: relative;
+		}
+		.search i {
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 18px;
+			color: var(--text-color1);
+		}
+		.search input {
+			height: 2rem;
+			width: 34vw;
+			padding: 0rem 1rem 0rem 2.5rem;
+			font-size: 18px;
+			border: none;
+			outline: none;
+		}
+        #submitButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: var(--button-text-color);
+            background-color: var(--button-normal);
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #submitButton.bright {
+            background-color: var(--button-bright);
+        }
+	
